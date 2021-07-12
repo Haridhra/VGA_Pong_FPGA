@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "../../../../vga_controller.gen/sources_1/bd/clk_divider/ipshared/d0f7" \
+"../../../bd/clk_divider/sim/clk_divider.v" \
+"../../../bd/clk_divider/ip/clk_divider_clk_wiz_0_0_1/clk_divider_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/clk_divider/ip/clk_divider_clk_wiz_0_0_1/clk_divider_clk_wiz_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

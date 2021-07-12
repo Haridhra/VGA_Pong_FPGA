@@ -1,0 +1,4 @@
+clk_divider.v,verilog,xil_defaultlib,../../../bd/clk_divider/sim/clk_divider.v,incdir="../../../../vga_controller.gen/sources_1/bd/clk_divider/ipshared/d0f7"incdir="../../../../vga_controller.gen/sources_1/bd/clk_divider/ipshared/d0f7"
+clk_divider_clk_wiz_0_0_clk_wiz.v,verilog,xil_defaultlib,../../../bd/clk_divider/ip/clk_divider_clk_wiz_0_0_1/clk_divider_clk_wiz_0_0_clk_wiz.v,incdir="../../../../vga_controller.gen/sources_1/bd/clk_divider/ipshared/d0f7"incdir="../../../../vga_controller.gen/sources_1/bd/clk_divider/ipshared/d0f7"
+clk_divider_clk_wiz_0_0.v,verilog,xil_defaultlib,../../../bd/clk_divider/ip/clk_divider_clk_wiz_0_0_1/clk_divider_clk_wiz_0_0.v,incdir="../../../../vga_controller.gen/sources_1/bd/clk_divider/ipshared/d0f7"incdir="../../../../vga_controller.gen/sources_1/bd/clk_divider/ipshared/d0f7"
+glbl.v,Verilog,xil_defaultlib,glbl.v

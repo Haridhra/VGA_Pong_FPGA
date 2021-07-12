@@ -1,0 +1,140 @@
+{
+    "design": {
+        "design_info": {
+            "boundary_crc": "0xB63B23CD0FD6FF72",
+            "device": "xc7a35ticsg324-1L",
+            "gen_directory": "../../../../vga_pong.gen/sources_1/bd/clk_multiplier",
+            "name": "clk_multiplier",
+            "rev_ctrl_bd_flag": "RevCtrlBdOff",
+            "synth_flow_mode": "Hierarchical",
+            "tool_version": "2020.2",
+            "validated": "true"
+        },
+        "design_tree": {
+            "clk_multiplier": ""
+        },
+        "ports": {
+            "i_rst": {
+                "type": "rst",
+                "direction": "I",
+                "parameters": {
+                    "INSERT_VIP": {
+                        "value": "0",
+                        "value_src": "default"
+                    },
+                    "POLARITY": {
+                        "value": "ACTIVE_HIGH"
+                    }
+                }
+            },
+            "i_clk_100M": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                    "CLK_DOMAIN": {
+                        "value": "clk_multiplier_i_clk_100M",
+                        "value_src": "default"
+                    },
+                    "FREQ_HZ": {
+                        "value": "100000000"
+                    },
+                    "FREQ_TOLERANCE_HZ": {
+                        "value": "0",
+                        "value_src": "default"
+                    },
+                    "INSERT_VIP": {
+                        "value": "0",
+                        "value_src": "default"
+                    },
+                    "PHASE": {
+                        "value": "0.000",
+                        "value_src": "default"
+                    }
+                }
+            },
+            "o_clk_148M": {
+                "type": "clk",
+                "direction": "O",
+                "parameters": {
+                    "CLK_DOMAIN": {
+                        "value": "/clk_multiplier_clk_out1",
+                        "value_src": "ip_prop"
+                    },
+                    "FREQ_HZ": {
+                        "value": "148500000",
+                        "value_src": "ip_prop"
+                    },
+                    "FREQ_TOLERANCE_HZ": {
+                        "value": "0",
+                        "value_src": "default"
+                    },
+                    "INSERT_VIP": {
+                        "value": "0",
+                        "value_src": "default"
+                    },
+                    "PHASE": {
+                        "value": "0.0",
+                        "value_src": "ip_prop"
+                    }
+                }
+            },
+            "o_clk_lock": {
+                "direction": "O"
+            }
+        },
+        "components": {
+            "clk_multiplier": {
+                "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+                "xci_name": "clk_multiplier_clk_wiz_0_0",
+                "xci_path": "ip\\clk_multiplier_clk_wiz_0_0\\clk_multiplier_clk_wiz_0_0.xci",
+                "inst_hier_path": "clk_multiplier",
+                "parameters": {
+                    "CLKOUT1_JITTER": {
+                        "value": "217.614"
+                    },
+                    "CLKOUT1_PHASE_ERROR": {
+                        "value": "245.344"
+                    },
+                    "CLKOUT1_REQUESTED_OUT_FREQ": {
+                        "value": "148.5"
+                    },
+                    "MMCM_CLKFBOUT_MULT_F": {
+                        "value": "37.125"
+                    },
+                    "MMCM_CLKOUT0_DIVIDE_F": {
+                        "value": "6.250"
+                    },
+                    "MMCM_DIVCLK_DIVIDE": {
+                        "value": "4"
+                    }
+                }
+            }
+        },
+        "nets": {
+            "i_rst_1": {
+                "ports": [
+                    "i_rst",
+                    "clk_multiplier/reset"
+                ]
+            },
+            "i_clk_100M_1": {
+                "ports": [
+                    "i_clk_100M",
+                    "clk_multiplier/clk_in1"
+                ]
+            },
+            "clk_multiplier_clk_out1": {
+                "ports": [
+                    "clk_multiplier/clk_out1",
+                    "o_clk_148M"
+                ]
+            },
+            "clk_multiplier_locked": {
+                "ports": [
+                    "clk_multiplier/locked",
+                    "o_clk_lock"
+                ]
+            }
+        }
+    }
+}

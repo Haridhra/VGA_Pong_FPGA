@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../vga_controller.gen/sources_1/bd/clk_divider/ipshared/d0f7" \
+"../../../../vga_controller.ip_user_files/bd/clk_divider/ip/clk_divider_clk_wiz_0_0/clk_divider_clk_wiz_0_0_clk_wiz.v" \
+"../../../../vga_controller.ip_user_files/bd/clk_divider/ip/clk_divider_clk_wiz_0_0/clk_divider_clk_wiz_0_0.v" \
+"../../../../vga_controller.ip_user_files/bd/clk_divider/sim/clk_divider.v" \
+
+sv xil_defaultlib  --include "../../../../vga_controller.gen/sources_1/bd/clk_divider/ipshared/d0f7" \
+"../../../../vga_controller.srcs/sources_1/new/clk_div.sv" \
+"../../../../vga_controller.srcs/sim_1/new/clk_gen_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
